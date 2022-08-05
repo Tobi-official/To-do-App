@@ -1,0 +1,489 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    top: 0;
+}
+
+.nav {
+    padding: 5px 45px 30px 10px;
+    flex-basis: 350px;
+    height: 100%;
+    background: #FAFAFA;
+    font-size: 35px;
+    color: black;
+    height: 100%;
+    overflow: hidden;
+}
+
+.navlist  {
+    padding: 0;
+    margin: 25px 20px;
+    width: 100%;
+}
+
+.navlist a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: bold;
+    font-family: cursive;
+    padding: 10px 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navlist a:hover {
+    background: #abdff1;
+}
+
+.navlist a:active {
+    transition: scale(2);
+    opacity: .7;
+}
+
+.main_body {
+    flex: 1;
+    background: #1d86ac;
+    color: white;
+}
+
+
+.content h1 {
+    font-weight: bold;
+    text-align: center;
+    margin: 15px;
+    font-size: 40px;
+    font-family: monospace;
+}
+
+.myh1 {
+    display: none;
+}
+
+#dashbord_h1 {
+    display: none;
+}
+
+.content h2{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    font-family: monospace;
+}
+
+.register {
+    width: 60%;
+    font-size: 18px;
+    height: 530px;
+    margin: 30px auto;
+    padding: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px silver;
+    border-radius: 30px;
+}
+
+.register h1{
+    text-align: center;
+    margin: 20px;
+}
+
+.form_input {
+    margin: 15px 30px;
+    padding: 0 40px;
+}
+
+
+.input_control {
+    border: none;
+    border-radius: 15px;
+    width: 100%;
+    height: 30px;
+    padding: 15px 20px;
+    line-height: 1.5;
+    font-size: 18px;
+    color: black;
+    
+}
+
+.submit {
+    font-size: 18px;
+    background: #e60000;
+    height: 40px;
+    width: 70%;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+
+.submit:hover {
+    opacity: .9;
+}
+
+.submit:active {
+    transform: scale(0.9);
+}
+
+.submit_form {
+    margin-left: 20%;
+}
+
+.register small {
+    font-size: 18px;
+    padding: 0 20px;
+}
+
+.register small span a{
+    text-decoration: none;
+    color: #ffff00;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.register small span a:hover{
+    color: #cc0000;
+    opacity: .8;
+}
+
+.register small span a:active{
+    transform: scale(0.8);
+}
+
+.login {
+    height: 450px;
+    margin-top: 100px;
+}
+
+.email_login {
+    padding: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.email_login span a {
+    text-decoration: none;
+    color: #ffff00;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.email_login span a:hover{
+    color: #cc0000;
+    opacity: .8;
+}
+
+.email_login span a:active{
+    transform: scale(0.8);
+}
+
+.nav .title, .nav h4, .nav h3, .nav p, .nav ul li {
+    margin: 10px;
+}
+
+.nav p, .nav ul li {
+    font-size: 20px;
+}
+
+.nav .title {
+    font-family: cursive;
+    text-decoration: underline;
+}
+
+.content h4 {
+    margin: 20px 10px;
+    font-family: arial;
+    text-align: center;
+}
+
+.content ul {
+    margin: 20px;
+}
+
+/* ALERT MSG */
+
+.fail {
+    height: 40px;
+    width: 250px;
+    padding: 8px;
+    background: #ff0000;
+    color: white;
+    margin: 2px auto;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 5px auto;
+    display: none;
+    text-align: center;
+}
+
+.login_fail {
+    height: 40px;
+    width: 250px;
+    padding: 8px;
+    background: #ff0000;
+    color: white;
+    margin: 2px auto;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 5px auto;
+    text-align: center;
+    display: none;
+}
+
+.success {
+    height: 40px;
+    width: 250px;
+    padding: 8px;
+    background: #00b33c;
+    color: #ffffff;
+    margin: 2px auto;
+    border-radius: 20px;
+    padding: 5px auto;
+    font-size: 20px;
+    display: none;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1070px) {
+   
+    .register {
+        height: 580px;
+        width: 70%;
+        margin-top: 120px;
+    }
+    
+    .login {
+        height: 440px;
+    }
+}
+
+
+@media only screen and (max-width: 980px) {
+    .login .span{
+        display:block;
+        margin-top: 5px;
+    }
+
+    .content h1, .content h2 {
+        margin-top: 30px 20px 0 20px;
+    }
+}
+
+@media only screen and (max-width: 917px) {
+    .login .span{
+        display:block;
+        margin-top: 5px;
+    }
+
+    .register .input_control {
+        width: 100%;
+    }
+    .register {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 848px) {
+    .register .input_control {
+        width: 100%;
+        margin-right: 20px;
+    }
+
+    .form_input {
+        margin: 18px 20px;
+        padding: 0 20px;
+    }
+}
+
+
+@media only screen and (max-width: 782px) {
+    .register {
+        width: 90%;
+        font-size: 16px;
+        height: 600px;
+        margin: 20px auto;
+        padding: 5px;
+        border-radius: 30px;;
+    }
+    .login {
+        height: 440px;
+        margin-top: 180px;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+  
+    .container {
+        font-size: 18px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .nav {
+        padding: 5px 40px 30px 5px;
+        flex-basis: 160px;
+        height: 100%;
+        overflow: scroll;
+        background: #FAFAFA;
+        font-size: 16px;
+        color: black;
+    }
+    
+    .nav .title, .nav h4, .nav h3, .nav p, .nav ul li {
+        margin: 4px;
+        font-size: 16px;
+    }
+
+    .main_body {
+        flex: 1;
+    }
+ 
+    .content h1 {
+        font-weight: bold;
+        text-align: center;
+        margin: 28px;
+        font-size: 20px;
+        font-family: monospace;
+    }
+    
+    .content h2{
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        font-family: monospace;
+    }
+
+    .register small {
+        font-size: 16px;
+        padding: 0 5px;
+    }
+    
+    .register small span a{
+        padding-left: 5px;
+        font-size: 15px;
+    }
+
+    .register {
+        width: 90%;
+        font-size: 18px;
+        height: 400px;
+        margin: 30px auto;
+        padding: 5px;
+        overflow: scroll;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .register h1{
+        text-align: center;
+        margin: 10px;
+        font-size: 20px;
+    }
+
+    .form_input {
+        margin: 15px 8px;
+        padding: 0 10px;
+    }
+    
+    
+    .input_control {
+        border: none;
+        border-radius: 15px;
+        width: 100%;
+        height: 10px;
+        padding: 15px 10px;
+        line-height: 1.5;
+        font-size: 16px;
+        color: black;
+    }
+    
+    .submit {
+        font-size: 18px;
+        height: 30px;
+        width: 60%;
+        border-radius: 20px;
+    }
+    
+    .register small {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+    
+    .register small span a{
+        padding-left: 10px;
+        font-size: 18px;
+        display: block;
+    }
+    
+    .login {
+        height: 400px;
+        margin-top: 30px;
+    }
+
+    .login h1{
+        font-size: 20px;
+    }
+
+    .email_login {
+        padding: 10px;
+        font-size: 16px;
+    }
+    
+    .email_login span a {
+        padding-left: 5px;
+        font-size: 16px;
+        display: block;
+    }
+
+        /* ALERT MSG */
+
+
+    .login_fail  {
+        height: 30px;
+        width: 180px;
+        padding: 2px;
+        background: #ff0000;
+        color: white;
+        margin: 2px auto;
+        border-radius: 20px;
+        font-size: 18px;
+        padding: 5px auto;
+    }
+
+    .fail {
+        height: 30px;
+        width: 180px;
+        padding: 2px;
+        margin: 2px auto;
+        border-radius: 20px;
+        font-size: 20px;
+        padding: 5px auto;
+    }
+    
+    .success {
+        height: 30px;
+        width: 180px;
+        padding: 2px;
+        margin: 2px auto;
+        border-radius: 20px;
+        padding: 5px auto;
+        font-size: 20px;
+    }
+
+}

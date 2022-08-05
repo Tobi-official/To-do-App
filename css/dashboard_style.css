@@ -1,0 +1,1081 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+.delete_task {
+    background-color: darkred;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 8px 25px;
+    border-radius: 20px;
+    border: none;
+}
+
+.delete_task_success {
+    color: green;
+    position: absolute;
+    top: 12%;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 65%;
+}
+
+.delete_task:hover {
+    opacity: .8;
+}
+
+.delete_task a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    top: 0;
+}
+
+#date {
+    cursor: pointer;
+}
+
+
+.nav {
+    padding: 5px 45px 30px 10px;
+    flex-basis: 350px;
+    height: 100%;
+    background: azure;
+    font-size: 35px;
+    color: black;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.navlist  {
+    padding: 0;
+    margin: 25px 20px;
+    width: 100%;
+}
+
+
+
+.navlist a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: bold;
+    font-family: cursive;
+    padding: 10px 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.navlist a:hover {
+    background: #abdff1;
+    border-radius: 30px;
+}
+
+.navlist a:active {
+    transition: scale(2);
+    opacity: .7;
+}
+
+
+.main_body {
+    flex: 1;
+    background: #1d86ac;
+    color: white;
+}
+
+
+.content h1{
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 30px;
+    font-size: 40px;
+    font-family: monospace;
+}
+
+.content .h1_dash{
+    margin: 30px;
+}
+
+.myh1 {
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 30px;
+    font-size: 40px;
+    font-family: monospace;
+    display: none;
+    color: #000099;
+}
+
+
+.content h2{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    font-family: monospace;
+}
+
+.nav .title, .nav h4, .nav h3, .nav p, .nav ul li {
+    margin: 10px;
+}
+
+.nav p, .nav ul li {
+    font-size: 20px;
+}
+
+.nav .title {
+    font-family: cursive;
+    text-decoration: underline;
+}
+
+.content h4 {
+    margin: 20px 10px;
+    font-family: arial;
+    text-align: center;
+}
+
+.content ul {
+    margin: 20px;
+}
+
+.logout {
+    padding: 15px 50px;
+    background: #990000;
+    text-align: center;
+    border: 0;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+
+
+.logout:hover {
+   opacity: .8;
+}
+
+.logout:active {
+    transform: scale(1);
+ }
+ 
+
+.navlist .logout_a, .add_task_navlist .logout_add_task {
+     margin-top: 0px;
+     padding: 0;
+     display: inline;
+     text-align: center;
+     margin: 60px;
+}
+
+
+.navlist .logout_a:hover, .add_task_navlist .logout_add_task:hover {
+    background: none;
+}
+
+.preview {
+    display: flex;
+    height: 150px;
+    width: 1000px;
+    margin: 10px auto;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.not {
+    margin-top: 0;
+}
+
+.preview_content a{
+    text-decoration: none;
+}
+
+.preview_content {
+    flex-basis: 300px;
+    height: 120px;
+    margin: 20px auto;
+}
+
+.preview_box {
+    background: orange;
+    font-size: 20px;
+    color: white;
+    border-radius: 50px;
+    height: 100px;
+    width: 280px;
+    padding: 35px;
+}
+
+.preview_box p{
+    font-size: 25px;
+    text-align: center;
+}
+
+.preview_box:hover{
+    opacity: .7;
+}
+
+.preview_box:active{
+    transform: scale(0.9);
+}
+
+.profile_frame {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+.profile_frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.a, .b{
+    background: #000099;
+}
+
+.e{
+   background: #8c0b0b; 
+}
+
+ .c , .f{
+    background: #00264d;
+ }
+
+.d {
+    background: #000066;
+}
+
+ 
+
+.profile_content {
+    box-shadow: 0 0 5px white;
+    display: flex;
+    padding: 10px;
+    border-radius: 20px;
+    overflow: auto;
+    margin: 8px;
+}
+
+.profile_content p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile_content h3{
+    margin: 10px auto;
+    font-size: 30px;
+    font-family: garamond;
+    color: #011f5b;
+}
+
+
+.bio_form {
+    flex-basis: 600px;
+}
+
+.data_form {
+    flex: 1;
+    overflow: auto;
+}
+
+.input_control {
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+    color: #ff0000;
+    border-radius: 45px;
+    padding: 15px;
+    border: 0;
+}
+
+#bio {
+    height: 280px;
+    width: 80%;
+    padding: 20px;
+    font-size: 25px;
+    border: 0;
+}
+
+.edit_profile {
+    height: 100%;
+    margin: 5px 100px;
+    padding: 10px;
+}
+
+.edit_profile h2{
+  text-align: center;
+  font-size: 35px;
+  font-family: sans-serif;
+  color: #011f5b;
+}
+
+.edit_profile .h3{
+    font-size: 25px;
+    font-family: sans-serif;
+    margin: 10px 50px 5px 70px;
+    font-weight: bold;
+  }
+
+  .edit_form {
+    width: 100%;
+    padding: 5px;
+    margin-top: 3px;
+  }
+
+  .edit_form p{
+    font-size: 23px;
+  }
+
+  .edit_control {
+    width: 100%;
+    height: 30px;
+    border-radius: 30px;
+    padding-left: 10px;
+    font-size: 18px;
+    border: none;
+  }
+
+  #edit_bio {
+    width: 30%;
+    height: 140px;
+    padding: 15px;
+    resize: none;
+  }
+
+  .bio_h3 {
+    font-size: 25px;
+    margin: 4px;
+  }
+
+  .update_btn {
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    background: darkorange;
+    font-size: 18px;
+    width: 25%;
+    margin: 0 auto;
+    color: white;
+  }
+
+  .update_btn:hover {
+    opacity: .8;
+  }
+
+  .update_btn:active {
+    transform: scale(.9);
+  }
+
+  .ext_allowed {
+    font-size: 18px;
+    padding: 10px;
+    color: red;
+  }
+
+  #password {
+    width: 30%;
+  }
+
+  .message_container {
+    height: 40px;
+    width: 300px;
+    margin: 10px auto;
+    font-size: 20px;
+    text-align: center;
+    display: none;
+  }
+
+  .fail_msg  {
+    background: #ff0000;
+    color: #ffcccc;
+    border-radius: 30px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 5px;
+    display: none;
+  }
+
+  .success_msg {
+    background: #26734d;
+    color: #d9f2e6;
+    border-radius: 20px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 5px;
+    display: none;
+  }
+
+  /* Add Task */
+
+  
+    .add_task_container {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    .add_task_nav {
+        background: #1d86ac;
+        font-size: 24px;
+        color: white;
+        overflow: hidden;
+        height: 60px;
+        padding: 0 80px;
+        margin: 0;
+        position: sticky;
+    }
+
+    .add_task_navlist {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding-top: 15px;
+        overflow: hidden;
+        position: relative;
+       }
+
+    .add_task_navlist a {
+        color: white;
+        text-decoration: none;
+        font-family: karla, candara;
+        padding: 0 30px;
+        display: inline-block;
+        justify-content: space-between;
+    }
+ 
+    .add_task_navlist a:hover {
+        color: darkorange;
+    }
+
+    .add_task_logout {
+        background-color: darkorange;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        font-size: 18px;
+        padding: 15px 30px;
+        text-align: center;
+        cursor: pointer;
+        right: 0;
+        top: 7%;
+        position: absolute;
+    }
+
+    .add_task_logout:hover {
+        opacity: .8;
+    }
+
+    .add_task_main_body {
+        height: 100vh;
+        width: 100%;
+        background: #add8e6;
+    }
+
+    .add_tasks {
+        height: 670px;
+        overflow-y: scroll;
+        width: 90%;
+        border-radius: 30px;
+        margin: 10px auto;
+        padding: 20px;
+        background-color: #ffffff;
+    }
+   
+    .add_tasks h2 {
+        font-size: 28px;
+        color: orange;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+
+    .flex_control {
+        display: flex;
+    }
+
+    .add_task_form_input {
+        margin: 22px 20px;
+        width: 600px;
+        padding: 10px;
+    }
+
+    .add_task_form_input select{
+        border-radius: 20px;
+        font-size: 18px;
+        width: 100%;
+        font-family: cursive;
+        padding: 8px 25px;
+        border: 3px solid #add8e6;
+        cursor: pointer;
+        z-index: 1;
+        outline: none;
+        appearance: none;
+        background-color: transparent;
+    }
+
+    .add_task_form_input option{
+        text-align: center;
+    }
+
+    .add_task_form_input p {
+        margin: 10px 0;
+        font-size: 27px;
+        color: #1d86ac;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .add_task_text_input{
+        margin: 15px 20px;
+        font-size: 27px;
+        color: #1d86ac;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .add_task_text_input p{
+        margin: 15px 40px;
+        font-size: 27px;
+        color: #1d86ac;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .add_task_input_control {
+        border-radius: 20px;
+        font-size: 22px;
+        width: 100%;
+        font-family: karla;
+        padding: 9px 20px;
+        border: 3px solid #add8e6;
+        outline: none;
+    }
+
+    .add_task_text_area {
+        border-radius: 25px;
+        margin: 25px 28px;
+        padding-left: 35px;
+        padding-top: 30px;
+        text-decoration: none;
+        border: 3px solid #add8e6;
+        resize: none;
+        outline: none;
+        overflow: hidden;
+        font-size: 22px;
+        color: #022a35;
+    }
+
+    .add_task_btn {
+        padding: 15px 50px;
+        border: none;
+        border-radius: 30px;
+        color: white;
+        margin-left: 40px;
+        cursor: pointer;
+        background: #019790;
+        font-size: 20px;
+    }
+
+    .add_task_btn:hover {
+       opacity: .8;
+    }
+
+    .alert_container {
+        top: 12%;
+        right: 8%;
+        position: absolute;
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 450px;
+        height: 50px;
+        text-align: center;
+    }
+
+    .empty_task {
+        font-size: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: absolute;
+        left: 38%;
+        top: 30%;
+    }
+
+    .click_to_add_task {
+        position: absolute;
+        left: 45%;
+        top: 40%;
+        text-align: center;
+        font-size: 29px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .click_to_add_task a {
+        text-decoration: none;
+        color: red;
+    }
+
+    .click_to_add_task a:hover {
+        color: darkorange;
+    }
+
+    .my_task_list {
+        margin: 40px 400px;
+    }
+
+    .table_format {
+        background: white;
+        box-shadow: 0 0 10px silver;
+        margin: auto;
+        margin-top: 30px;
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: none;
+        overflow: scroll;
+    }
+    
+    .table_format th {
+        padding: 10px;
+        border: 1px solid silver;
+        background-color: darkred;
+        color: white;
+        vertical-align: text-top;
+        white-space: nowrap;
+    }
+        
+    .table_format td {
+        padding: 20px;
+        border: 1px solid silver;
+    }
+    
+    .table_format td img {
+        width: 100%;
+    }
+    
+    .table_format tr:nth-child(even) {
+        background-color: rgb(239, 239, 239);
+    }
+    
+
+    /*  Media Query  */
+
+ 
+@media only screen and (max-width: 400px) {
+  
+    .nav {
+        padding: 15px 10px 30px 5px;
+        flex-basis: 150px;
+    }
+
+    .navlist  {
+        padding: 0;
+        margin: 40px 10px;
+    }
+    
+    
+    
+    .navlist a {
+        font-size: 18px;
+        font-family: cursive;
+        padding: 10px 10px;
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+
+    .logout {
+        padding: 10px 20px;
+        text-align: center;
+        border: 0;
+        border-radius: 30px;
+        color: white;
+        cursor: pointer;
+        font-size: 17px;
+        margin-top: 29px;
+    }
+
+    .navlist .logout_a, .add_task_navlist .logout_add_task {
+        margin-top: 0px;
+        padding: 0;
+        display: inline;
+        text-align: center;
+        margin: 10px;
+   }
+
+   
+    .content .myh1{
+        font-weight: bold;
+        text-align: center;
+        margin: 20px 10px 15px 55px;
+        font-size: 20px;
+    }
+
+    .profile_frame {
+        width: 130px;
+        height: 130px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: 10px auto;
+    }
+   
+    .content h2{
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        font-family: monospace;
+        padding: 0 10px;
+    }
+
+
+    .preview {
+        display: flex;
+        height: 60px;
+        width: 100vh;
+        margin: 30px 10px;
+        margin-top: 40px;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+   
+    .preview_content {
+        flex-basis: 130px;
+        height: 100px;
+        margin: auto 3px;
+        text-align: center;
+    }
+    
+    .preview_box {
+        font-size: 18px;
+        color: white;
+        border-radius: 28px;
+        height: 50px;
+        width: 110px;
+        padding: 15px;
+        align-items: center;
+    }
+    
+    .preview_box p{
+        font-size: 18px;
+        text-align: center;
+    }
+
+
+
+        
+    .profile_content {
+        box-shadow: 0 0 5px white;
+        display: flex;
+        padding: 10px;
+        border-radius: 20px;
+        overflow: auto;
+        margin: 8px;
+    }
+
+    .profile_content p{
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .profile_content h3{
+        margin: 10px auto;
+        font-size: 20px;
+        font-family: garamond;
+        color: #011f5b;
+    }
+
+
+    .bio_form {
+        flex-basis: 200px;
+    }
+
+    .data_form {
+        flex: 1;
+        overflow: auto;
+    }
+
+    .input_control {
+        width: 80%;
+        height: 20px;
+        font-size: 16px;
+        color: #ff0000;
+        border-radius: 20px;
+        padding: 9px;
+    }
+
+    #bio {
+        height: 150px;
+        width: 93%;
+        padding: 8px;
+        font-size: 16px;
+
+    }
+
+    .container {
+        height: 100vh;
+    }
+
+    .edit_profile {
+        height: 100%;
+        margin: 5px 10px;
+        padding: 4px;
+    }
+    
+    .edit_profile h2{
+      text-align: center;
+      font-size: 20px;
+    }
+    
+    .edit_profile .h3{
+        font-size: 20px;
+        margin: 15px 5px 5px 10px;
+      }
+    
+      .edit_form {
+        width: 100%;
+        padding: 5px;
+        margin-top: 3px;
+      }
+    
+      .edit_form p{
+        font-size: 18px;
+      }
+    
+      .edit_control {
+        width: 100%;
+        height: 30px;
+        border-radius: 20px;
+        padding-left: 8px;
+        font-size: 16px;
+        border: none;
+      }
+    
+      #edit_bio {
+        width: 70%;
+        height: 100px;
+        padding: 10px;
+      }
+
+      
+  .bio_h3 {
+    font-size: 20px;
+    margin: 4px;
+  }
+
+  .update_btn {
+    padding: 2px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 13px;
+    background: darkorange;
+    font-size: 18px;
+    width: 50%;
+    color: white;
+  }
+
+  .ext_allowed {
+    font-size: 15px;
+    padding: 10px;
+    color: red;
+  }
+
+  #password {
+    width: 80%;
+  }
+
+  #dashboard_nav {
+    display: none;
+  }
+
+  #hamburger_menu {
+    background: darkorange;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 1%;
+    left: 2%;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: space-between;
+    padding-top: 3px;
+  }
+
+  .line {
+    border: 2px solid black;
+    width: 80%;
+    height: 3px;
+    margin: 6px auto;
+  }
+
+    .add_task_navlist .logout_add_task {
+        margin: 5px;
+        padding: 2px;
+    }
+
+    .add_task_nav {
+        background: #1d86ac;
+        font-size: 18px;
+        color: white;
+        overflow: hidden;
+        height: 60px;
+        padding: 0 1px 0 0;
+    }
+
+    .add_task_navlist {
+        padding-top: 8px;
+       }
+
+       .add_task_navlist a {
+        padding: 0 2px;
+    }
+
+    .add_task_logout {
+        border-radius: 20px;
+        font-size: 16px;
+        padding: 3px 10px;
+        text-align: center;
+        cursor: pointer;
+        right: 0;
+        top: 50%;
+        position: absolute;
+    }
+
+    
+    .add_tasks {
+        padding: 10px;
+        height: 89%; 
+        overflow: scroll;
+        width: 97%;
+        border-radius: 30px;
+        margin: 5px;
+    }
+   
+    .add_tasks h2 {
+        font-size: 20px;
+    }
+
+
+    .add_task_form_input {
+        margin: 5px 10px;
+        width: 90%;
+        padding: 5px;
+    }
+
+    .add_task_form_input select{
+        font-family: cursive;
+        cursor: pointer;
+        padding: 2px 5px;
+    }
+
+    .add_task_form_input p {
+        margin: 5px 0;
+        font-size: 20px;
+    }
+    .add_task_text_input{
+        margin: 5px 10px;
+        font-size: 20px;
+        overflow: auto;
+    }
+
+    .add_task_text_input p{
+        margin: 2px 10px;
+        font-size: 20px;
+    }
+
+    .add_task_input_control {
+        border-radius: 20px;
+        font-size: 20px;
+        padding: 3px 10px;
+    }
+
+    .flex_control {
+        display: block;
+    }
+
+    .add_task_text_area {
+        margin: 5px 8px;
+        padding-left: 10px;
+        padding-top: 18px;
+        font-size: 20px;
+        height: 180px;
+        width: 85%;
+    }
+
+    .add_task_btn {
+        padding: 5px 10px;
+        border-radius: 30px;
+        margin-left: 20px;
+        font-size: 18px;
+    }
+
+    .alert_container {
+        top: 16%;
+        right: 8%;
+        position: absolute;
+        font-size: 17px;
+        width: 250px;
+        height: 30px;
+    }
+
+    .empty_task {
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: absolute;
+        left: 29%;
+        top: 30%;
+    }
+ 
+    .click_to_add_task {
+        position: absolute;
+        left: 40%;
+        top: 35%;
+        text-align: center;
+        font-size: 18px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .add_task_main_body {
+        overflow: scroll;
+    }
+
+    .add_task_main_body h2 {
+        font-size: 20px;
+    }
+
+    .table_format {
+        margin: 5px;
+        font-size: 18px;
+        width: 100%;
+        overflow: scroll;
+    }
+    
+    .table_format th {
+        padding: 2px;
+    }
+        
+    .table_format td {
+        padding: 2px;
+    }
+    
+    
+    .table_format tr:nth-child(even) {
+        background-color: rgb(239, 239, 239);
+    }
+    
+}
