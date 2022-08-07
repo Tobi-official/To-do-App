@@ -1,0 +1,28 @@
+             MY DATABASE SETUP
+
+    * I created a database named "to-do"
+
+    * I created two tables which are 
+        1. "users_info"
+        2. "users_tasks"
+    
+    * In the users_info table i created eight rows (all in lower case) which are:
+        1. "id" (The id has an auto-increment with a primary key)
+        2. "full_name"
+        3. "email"
+        4. "username"
+        5. "hashed_password"
+        6. "profile"
+        7. "bio"
+        8. "country" 
+
+    * In the users_tasks table i created seven rows (all in lower case except "SN") which are:
+        1. "id" (The id has an auto-increment with a primary key)
+        2. "SN"
+        3. "title"
+        4. "date"
+        5. "category"
+        6. "notes"
+        7. "task"
+
+        Thats all about the DATABASE SETUP, Thank you sir!

@@ -73,9 +73,8 @@
         }
 
         if(isset($_GET['db_id'])) {
-            if($_GET['db_id'] == $id) {
-                    $delete = mysqli_query($GLOBALS['conn'], "DELETE  FROM users_tasks WHERE id='$id'");
-
+            if($_GET['db_id'] ==  $id) {  
+                $delete = mysqli_query($GLOBALS['conn'], "DELETE FROM users_tasks WHERE id='$id'");
                     if($delete) {
                             echo "<p class='delete_task_success'>Successfully deleted</p>";
                             header('location: ../includes/my_tasks.php');
