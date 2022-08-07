@@ -25,4 +25,4 @@
         6. "notes"
         7. "task"
 
-        Thats all about the DATABASE SETUP, Thank you sir!
+        Thats all about the DATABASE SETUP.
